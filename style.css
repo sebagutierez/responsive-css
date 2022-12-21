@@ -1,0 +1,224 @@
+/* VARIABLES */
+:root {
+  --primary: #44c3ff;
+  --secondary: #ecf5f8;
+  --light: #fff;
+  --dark: #0e223c;
+  --font-clr-1: #333333;
+  --font-clr-2: #3b3b3b;
+  --font-clr-3: #fdfdfd;
+  --font-clr-4: #f9fafa;
+  --font-clr-5: #7a7a7a;
+}
+
+/* GENERAL STYLES */
+
+@font-face {
+  font-family: Roboto sans-serif;
+  src: url(./assets/fonts/roboto-regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif;
+  text-decoration: none; /* quita el formato link */
+  list-style: none; /* quita el fortam lista */
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--font-clr-1);
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+ul {
+  padding: 0;
+}
+a {
+  color: var(--font-clr-1);
+}
+
+#welcome-section {
+  background: linear-gradient(#ddf2f9, #9ce3fb);
+}
+#suscription-section {
+  background-color: var(--secondary);
+}
+footer * {
+  background-color: var(--dark);
+  color: var(--font-clr-1);
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: inline;
+}
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  padding: 1em 2em;
+  border-radius: 5px;
+  color: var(--light);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Mobile-first */
+
+header {
+  display: grid;
+}
+header img {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin: 1rem;
+}
+header button {
+  grid-column: 4/6;
+  grid-row: 1/2;
+}
+header nav {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+
+header nav ul {
+  display: flex;
+  background-color: salmon;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh;
+}
+
+#welcome-section div {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--font-clr-5);
+}
+
+#welcome-section div h1 {
+  font-size: 10vw;
+  color: var(--font-clr-1);
+}
+
+#benefits-section {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+#benefits-section div {
+  width: 315px;
+  text-align: center;
+  margin: 0 2 rem;
+}
+
+#benefits-section div div {
+  background-color: var(--secondary);
+  color: var(--primary);
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 100%;
+  font-size: 3rem;
+  margin: 2.5rem auto;
+  display: grid;
+}
+
+#benefits-section div div i {
+  grid-row: 2/3;
+}
+
+#benefits-section div p {
+  color: var(--font-clr-5);
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+
+#Cursos {
+  padding: 2rem 0;
+  border-top: 1.3px solid var(--secondary);
+  text-align: center;
+}
+
+h2 {
+  font-size: 8vw;
+  margin: 2rem 0;
+}
+
+#Cursos > p {
+  color: var(--font-clr-5);
+  margin-bottom: 3.5;
+}
+#Cursos p a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+#Cursos > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#Cursos > div > div {
+  width: 260px;
+  margin: 2rem auto;
+  border: solid 1.2px var(--secondary);
+  border-radius: 10px;
+}
+
+#Cursos div > div .details-container {
+  text-align: left;
+  margin: 0 1.8rem 1.8rem;
+}
+
+#Cursos div > div .details-container > div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--font-clr-5);
+}
+
+#Cursos div > div .details-container > div > i {
+  color: var(--primary);
+  width: 20px;
+}
+
+#Cursos div > div .details-container > div > p {
+  margin: 0.35rem;
+}
+
+#Cursos div > div .button-container {
+  border-top: solid 1.2px var(--secondary);
+  padding: 1.15rem;
+}
+
+#Cursos div > div .button-container button {
+  width: 97%;
+  margin: 0;
+}
+
+@media (min-width: 400px) {
+  #Cursos > div > div {
+    width: 320px;
+  }
+}
+
+#Empresa > .container {
+  border-top: 1.3px solid var(--secondary);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#Empresa > div > div {
+  margin: 2rem;
+  width: 280px;
+}
