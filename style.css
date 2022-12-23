@@ -14,10 +14,10 @@
 
 /* GENERAL STYLES */
 
-/* @font-face {
+@font-face {
   font-family: Roboto sans-serif;
   src: url(./assets/fonts/roboto-regular.ttf);
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -26,113 +26,114 @@
   list-style: none; /* quita el fortam lista */
 }
 
-/* body {
+body {
   margin: 0;
   padding: 0;
   color: var(--font-clr-1);
   font-size: 1rem;
   overflow-x: hidden;
-} */
+}
 
-/* ul {
+/* quita el padding al menú */
+ul {
   padding: 0;
-} */
-
-/* a {
+}
+/* quita el color al menú */
+a {
   color: var(--font-clr-1);
-} */
-
-/* #welcome-section {
+}
+/* agrega color al fondo al welcome*/
+#welcome-section {
   background: linear-gradient(#ddf2f9, #9ce3fb);
-} */
-
-/* #subscription-section {
+}
+/* agrega color al fondo al formulario*/
+#subscription-section {
   background-color: var(--secondary);
-} */
-
-/* footer * {
+}
+/* agrega color al fondo al footer */
+footer {
   background-color: var(--dark);
-  color: var(--font-clr-1);
+  color: var(--font-clr-4);
   padding: 2rem 0;
-} */
-
-/* .hidden {
+}
+/* oculta el menu */
+.hidden {
   display: none;
-} */
+}
 
-/* .show {
+.show {
   display: inline;
-} */
-
-/* img {
+}
+/* las imágenes ocupan el 100% del ancho de la pantalla automáticamente */
+img {
   max-width: 100%;
-} */
-
-/* button {
-  background-color: var(--primary);
-  border: none;
-  padding: 1em 2em;
-  border-radius: 5px;
-  color: var(--light);
-  font-weight: 600;
-  font-size: 1rem;
-} */
+}
+/* estilo del botón */
+button {
+  background-color: var(--primary); /* color de fondo */
+  border: none; /* sin bordes */
+  padding: 1em 2em; /* espaciado x e y según el font-size (em)*/
+  border-radius: 5px; /* esquinas redondeadas */
+  color: var(--light); /* color de texto */
+  font-weight: 600; /* diámetro de los caracteres */
+  font-size: 1rem; /* tamaño de los caracteres según el root */
+}
 
 /* Mobile-first */
-
-/* header {
+/* incorporar grid */
+header {
   display: grid;
-} */
-
-/* header img {
+}
+/* posicionar la imagen del header en el grid */
+header img {
   grid-column: 1/4;
   grid-row: 1/2;
   margin: 1rem;
-} */
-
-/* header button {
+}
+/* posicionar el botón en el grid */
+header button {
   grid-column: 4/6;
   grid-row: 1/2;
-} */
-
-/* header nav {
+}
+/* posicionar el menú en el grid */
+header nav {
   grid-column: 1/6;
   grid-row: 2/3;
-} */
-
-/* header nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 40vh;
-} */
-
-/* #welcome-section div {
+}
+/* flexbox al menu */
+header nav ul {
+  display: flex; /* flexbox */
+  flex-direction: column; /* encolumnado */
+  align-items: center; /* alineación central */
+  justify-content: space-between; /* espacio vertical */
+  height: 40vh; /* altura proporcional */
+}
+/* estilo del texto en el welcome */
+#welcome-section div {
   text-align: center;
   padding: 2rem 1rem;
   color: var(--font-clr-5);
-} */
-
-/* #welcome-section div h1 {
-  font-size: 10vw;
+}
+/* estilo del h1 en el welcome */
+#welcome-section div h1 {
+  font-size: 10vw; /* vw según la pantalla */
   color: var(--font-clr-1);
-} */
-
-/* #benefits-section {
-  display: flex;
-  flex-flow: row wrap;
+}
+/* flexbox a los elementos de beneficios */
+#benefits-section {
+  display: flex; /* flexbox */
+  flex-flow: row wrap; /* flex-direction:row + flex-wrap:wrap */
   margin: 2rem 0;
-  justify-content: center;
-} */
-
-/* #benefits-section div {
-  width: 315px;
+  justify-content: center; /* centra los objetos */
+}
+/* centra los elementos de beneficios */
+#benefits-section div {
+  width: 315px; /* para los celulares más chicos */
   text-align: center;
   margin: 0 2 rem;
-} */
-
-/* #benefits-section div div {
+}
+/* estilo a los íconos de beneficios */
+#benefits-section div div {
   background-color: var(--secondary);
   color: var(--primary);
   width: 1.7em;
@@ -141,118 +142,118 @@
   font-size: 3rem;
   margin: 2.5rem auto;
   display: grid;
-} */
-
-/* #benefits-section div div i {
+}
+/* centrar los íconos de beneficios */
+#benefits-section div div i {
   grid-row: 2/3;
-} */
-
-/* #benefits-section div p {
+}
+/* estilo a los párrados de beneficios */
+#benefits-section div p {
   color: var(--font-clr-5);
   font-size: 0.9rem;
   line-height: 1.6rem;
-} */
-
-/* #Cursos {
+}
+/* estilo a cursos */
+#Cursos {
   padding: 2rem 0;
   border-top: 1.3px solid var(--secondary);
   text-align: center;
-} */
-
-/* h2 {
+}
+/* estilo a los h2 */
+h2 {
   font-size: 8vw;
   margin: 2rem 0;
-} */
-
-/* #Cursos > p {
+}
+/* estilos a los párrafos de cursos */
+#Cursos > p {
   color: var(--font-clr-5);
   margin-bottom: 3.5rem;
-} */
-
-/* #Cursos p a {
+}
+/* estilos al link de cursos */
+#Cursos p a {
   color: var(--primary);
   text-decoration: underline;
-} */
-
-/* #Cursos > div {
+}
+/* flexbox a las cajas de los cursos */
+#Cursos > div {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-} */
-
-/* #Cursos > div > div {
+}
+/* estilos de las cajas de los cursos */
+#Cursos > div > div {
   width: 260px;
   margin: 2rem auto;
   border: solid 1.2px var(--secondary);
   border-radius: 10px;
-} */
-
-/* #Cursos div > div .details-container {
+}
+/* estilos de los elementos en los cursos */
+#Cursos div > div .details-container {
   text-align: left;
   margin: 0 1.8rem 1.8rem;
-} */
-
-/* #Cursos div > div .details-container > div {
+}
+/* estilos de los elementos en los cursos */
+#Cursos div > div .details-container > div {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.4rem; /* espaciado entre iconos y textos */
   color: var(--font-clr-5);
-} */
-
-/* #Cursos div > div .details-container > div > i {
+}
+/* estilos de los iconos en los cursos */
+#Cursos div > div .details-container > div > i {
   color: var(--primary);
   width: 20px;
-} */
-
-/* #Cursos div > div .details-container > div > p {
+}
+/* estilos de los párrafos en los cursos */
+#Cursos div > div .details-container > div > p {
   margin: 0.35rem;
-} */
-
-/* #Cursos div > div .button-container {
+}
+/* estilos del botón */
+#Cursos div > div .button-container {
   border-top: solid 1.2px var(--secondary);
   padding: 1.15rem;
-} */
-
-/* #Cursos div > div .button-container button {
+}
+/* estilos del botón */
+#Cursos div > div .button-container button {
   width: 97%;
   margin: 0;
-} */
-
-/* @media (min-width: 400px) {
+}
+/* anchos para pantallas tablet y computadoras  */
+@media (min-width: 400px) {
   #Cursos > div > div {
     width: 320px;
   }
-} */
-
-/* #Empresa > .container {
+}
+/* flexbox empresa */
+#Empresa > .container {
   border-top: 1.3px solid var(--secondary);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-} */
-
-/* #Empresa > div > div {
+}
+/* estilos a los divs de empresa + grid */
+#Empresa > div > div {
   margin: 2rem;
   width: 280px;
   display: grid;
-} */
-
-/* #Empresa div div > i {
+}
+/* estilos a los íconos (comillas) */
+#Empresa div div > i {
   color: var(--primary);
   margin: 0 1rem;
-} */
-
-/* #Empresa div div > p {
+}
+/* estilos a los párrafos */
+#Empresa div div > p {
   text-align: center;
   line-height: 1.6rem;
   font-size: 1.2rem;
-} */
-
-/* #Empresa div div > i:last-of-type {
+}
+/* estilos al último elemento (comillas) */
+#Empresa div div > i:last-of-type {
   text-align: right;
-} */
-
-/* #Empresa div div > img {
+}
+/* estilos a la imágen */
+#Empresa div div > img {
   margin: 0 auto;
   width: 50%;
   filter: grayscale();
@@ -262,244 +263,245 @@
   -moz-transition: ease-in-out 0.25s;
   -ms-transition: ease-in-out 0.25s;
   -o-transition: ease-in-out 0.25s;
-} */
-
-/* #Empresa div div > img:hover {
+}
+/* estilos a la imágen */
+#Empresa div div > img:hover {
   filter: none;
   -webkit-filter: none;
-} */
-
-/* #Empresa div div > .clarin {
+}
+/* estilo a la imágen por ser más oscura */
+#Empresa div div > .clarin {
   opacity: 0.6;
-} */
-
-/* #Empresa div div > .clarin:hover {
+}
+/* estilo a la imágen por ser más oscura */
+#Empresa div div > .clarin:hover {
   opacity: 1;
-} */
-
-/* #new-diplomatura {
+}
+/* imágen de fondo */
+#new-diplomatura {
   background-image: url(./assets/diplomatura.PNG);
   padding: 3rem 2rem;
-} */
-
-/* #new-diplomatura > p:nth-child(1) {
+}
+/* color del 1er hijo (párrafo) */
+#new-diplomatura > p:nth-child(1) {
   color: white;
-} */
-
-/* #new-diplomatura > h2:nth-child(2) {
+}
+/* color del 2do hijo (h2) */
+#new-diplomatura > h2:nth-child(2) {
   color: white;
-} */
-
-/* #new-diplomatura > p:nth-child(3) span {
+}
+/* espesor del 3er hijo (span) */
+#new-diplomatura > p:nth-child(3) span {
   font-weight: 600;
-} */
-
-/* #new-diplomatura > button {
+}
+/* estilos del botón */
+#new-diplomatura > button {
   background-color: var(--light);
   color: var(--primary);
   width: 230px;
   margin: 1.5rem 0;
-} */
-
-/* #new-diplomatura > button i {
+}
+/* estilos del ícono del botón */
+#new-diplomatura > button i {
   margin-left: 2rem;
-} */
-
-/* #worldwide {
+}
+/* flexbox */
+#worldwide {
   display: flex;
   flex-flow: row wrap;
-} */
-
-/* #worldwide img {
+}
+/* ordenar los contenedores (flex items) */
+/* order: VALOR POR DEFECTO: 0  */
+#worldwide img {
   order: 1;
-} */
-
-/* #worldwide > div {
+}
+/* margenes */
+#worldwide > div {
   margin: 2rem;
-} */
-
-/* #worldwide > div p {
+}
+/* estilos al texto */
+#worldwide > div p {
   color: var(--font-clr-5);
   line-height: 1.45rem;
-} */
-
-/* #worldwide > div > div > div {
+}
+/* estilos al texto */
+#worldwide > div > div > div {
   text-align: center;
   font-size: 1.15rem;
-} */
-
-/* #worldwide > div div > div > span {
+}
+/* estilos a los números */
+#worldwide > div div > div > span {
   color: var(--primary);
   font-size: 2.5rem;
-} */
-
-/* #sponsors-section {
+}
+/* margenes a sponsors */
+#sponsors-section {
   margin: 4rem 0;
-} */
-
-/* #sponsors-section p,
+}
+/* margenes al párrafo y título */
+#sponsors-section p,
 #sponsors-section h2 {
   margin: 2rem;
   text-align: center;
-} */
-
-/* #sponsors-section p {
+}
+/* espaciado del párrafo */
+#sponsors-section p {
   line-height: 25px;
-} */
-
-/* .slides-container {
+}
+/* ocultar lo que excede el eje x, desactivando el scroll */
+.slides-container {
   overflow-x: hidden;
-} */
-
-/* .slides-items {
+}
+/* flexbox a las imágenes */
+.slides-items {
   display: flex;
   width: 350%;
   animation-name: slides;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-} */
-
-/* .slides-items div {
+}
+/* ubicación de las imágenes */
+.slides-items div {
   width: 50%;
-} */
-
-/* .slides-items div > img {
+}
+/* ubicación de las imágenes */
+.slides-items div > img {
   width: 140px;
   margin: 0 auto;
   display: grid;
-} */
-
-/* @keyframes slides {
+}
+/* animar las imágenes */
+@keyframes slides {
   0% {
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    -moz-transform: translate(0);
-    -ms-transform: translate(0);
-    -o-transform: translate(0);
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
   20% {
-    transform: translate(-50vw);
-    -webkit-transform: translate(-50vw);
-    -moz-transform: translate(-50vw);
-    -ms-transform: translate(-50vw);
-    -o-transform: translate(-50vw);
+    transform: translateX(-50vw);
+    -webkit-transform: translateX(-50vw);
+    -moz-transform: translateX(-50vw);
+    -ms-transform: translateX(-50vw);
+    -o-transform: translateX(-50vw);
   }
   40% {
-    transform: translate(-100vw);
-    -webkit-transform: translate(-100vw);
-    -moz-transform: translate(-100vw);
-    -ms-transform: translate(-100vw);
-    -o-transform: translate(-100vw);
+    transform: translateX(-100vw);
+    -webkit-transform: translateX(-100vw);
+    -moz-transform: translateX(-100vw);
+    -ms-transform: translateX(-100vw);
+    -o-transform: translateX(-100vw);
   }
   60% {
-    transform: translate(-150vw);
-    -webkit-transform: translate(-150vw);
-    -moz-transform: translate(-150vw);
-    -ms-transform: translate(-150vw);
-    -o-transform: translate(-150vw);
+    transform: translateX(-150vw);
+    -webkit-transform: translateX(-150vw);
+    -moz-transform: translateX(-150vw);
+    -ms-transform: translateX(-150vw);
+    -o-transform: translateX(-150vw);
   }
   80% {
-    transform: translate(-200vw);
-    -webkit-transform: translate(-200vw);
-    -moz-transform: translate(-200vw);
-    -ms-transform: translate(-200vw);
-    -o-transform: translate(-200vw);
+    transform: translateX(-200vw);
+    -webkit-transform: translateX(-200vw);
+    -moz-transform: translateX(-200vw);
+    -ms-transform: translateX(-200vw);
+    -o-transform: translateX(-200vw);
   }
   100% {
-    transform: translate(-250vw);
-    -webkit-transform: translate(-250vw);
-    -moz-transform: translate(-250vw);
-    -ms-transform: translate(-250vw);
-    -o-transform: translate(-250vw);
+    transform: translateX(-250vw);
+    -webkit-transform: translateX(-250vw);
+    -moz-transform: translateX(-250vw);
+    -ms-transform: translateX(-250vw);
+    -o-transform: translateX(-250vw);
   }
-} */
-
-/* #subscription-section {
+}
+/* estilos al titulo y párrafo */
+#subscription-section {
   text-align: center;
   padding: 1rem 0 3rem;
-} */
-
-/* #subscription-section p {
+}
+/* estilos al párrafo */
+#subscription-section p {
   color: var(--font-clr-5);
   margin: 2rem 2rem 1rem;
-} */
-
-/* #subscription-section input {
+}
+/* estilos al formulario de email */
+#subscription-section input {
   padding: 0.75rem 1 rem;
   width: 280px;
   border: none;
   margin-bottom: 2rem;
-} */
-
-/* #Contacto .footer-container {
-  padding: 0.2rem;
-} */
-
-/* #Contacto .footer-container div img {
+}
+/* espaciado al footer */
+#Contacto .footer-container {
+  padding: 0 2rem;
+}
+/* espaciado al footer */
+#Contacto .footer-container div img {
   margin-bottom: 2rem;
-} */
-
-/* #Contacto .footer-container div p {
+}
+/* color al párrafo */
+#Contacto .footer-container div p {
   color: var(--font-clr-5);
-} */
-
-/* #Contacto .footer-container div {
+}
+/* espaciado al footer */
+#Contacto .footer-container div {
   margin: 3rem 0;
-} */
-
-/* #Contacto .footer-container h3 {
+}
+/* espaciado a los h3 */
+#Contacto .footer-container h3 {
   margin-bottom: 2rem;
-} */
-
-/* #Contacto .footer-container a {
+}
+/* estilos a los elementos */
+#Contacto .footer-container a {
   color: var(--font-clr-4);
   font-size: 0.9rem;
   display: block;
   margin: 0.5rem 0;
-} */
-
-/* #Contacto .footer-container div p {
+}
+/* tamaño de letra de los párrafos */
+#Contacto .footer-container div p {
   font-size: 0.9rem;
-} */
-
-/* #Contacto .footer-container div p:nth-child(3),
+}
+/* color de texto del tel e email */
+#Contacto .footer-container div p:nth-child(3),
 #Contacto .footer-container div p:nth-child(4) {
   color: var(--font-clr-4);
-} */
-
-/* #Contacto .footer-container div .icons-container {
+}
+/* flexbox a los íconos */
+#Contacto .footer-container div .icons-container {
   font-size: 1.25rem;
   display: flex;
   gap: 1rem;
   padding-bottom: 2rem;
-} */
-
-/* #Contacto .footer-container div .icons-container i:hover {
+}
+/* hover a los íconos */
+#Contacto .footer-container div .icons-container i:hover {
   color: var(--primary);
-} */
-
-/* #Contacto .copyright-container {
+}
+/* estilos a los h3 */
+#Contacto .copyright-container {
   padding: 1.5rem 2rem 0 2rem;
   border-top: 1.2px solid var(--primary);
   color: var(--primary);
   font-size: 0.9rem;
   opacity: 0.6;
-} */
+}
 
 /* MEDIA QUERIES */
-
-/* @media (min-width: 630px) {
+/* estilos para pantallas medianas */
+@media (min-width: 630px) {
   :root {
     font-size: 16.5px;
   }
   #welcome-section div h1 {
-    font-size: 10vh;
+    font-size: 10vh; /* ajusta el h1 a la altura de pantalla */
   }
   h2 {
-    font-size: 6vh;
+    font-size: 6vh; /* ajusta el h2 a la altura de pantalla */
   }
   button {
-    margin-top: 2rem;
+    margin-top: 2rem; /* espaciar p y button */
   }
   #welcome-section div p {
     margin-left: 2rem;
@@ -509,77 +511,66 @@
     margin-bottom: 2rem;
   }
   #Cursos > div {
-    gap: 2rem;
+    gap: 2rem; /* espaciar elementos */
   }
   #Empresa .container {
     padding: 2rem 0;
   }
   #worldwide > div > div {
-    display: flex;
+    display: flex; /* elementos en fila */
     width: 100%;
-    justify-content: space-evenly;
-    margin: 2rem 0;
+    justify-content: space-evenly; /* espaciado de elementos horizontal */
+    margin: 2rem 0; /* espaciado entre elementos vertical*/
   }
-
   #sponsors-section > p {
-    max-width: 60%;
+    max-width: 60%; /* limitar el ancho del párrafo */
     margin: 2rem auto;
   }
-
   #sponsors-section .slides-container {
     margin: 3rem 0;
   }
-
   .slides-items div > img {
-    width: 200px;
+    width: 200px; /* aumentar el tamaño de las img */ 
     margin: 0 auto;
     display: grid;
   }
-
   #Contacto .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex; /* enfilar elementos */
+    flex-wrap: wrap; /* ordena segun el ancho los elementos */
+    justify-content: space-between; /* espaciado entre elementos */
   }
-
   #Contacto .footer-container > {
-    width: 280px;
+    width: 280px; /* espaciado proporcional */
   }
-} */
+}
 
-/* @media (min-width: 850px) {
+/* estilos para pantallas semi grandes */
+@media (min-width: 850px) {
   :root {
     font-size: 17px;
   }
-
   header img {
     grid-row: 1/3;
   }
-
   header button {
     visibility: hidden;
   }
-
   .hidden {
     display: inline;
   }
-
   header nav {
     grid-row: 1/3;
     grid-column: 4/6;
     margin: auto 0;
   }
-
   header nav ul {
     flex-direction: row;
     justify-content: space-evenly;
     height: auto;
   }
-
   header nav ul li a:hover {
     color: var(--primary);
   }
-
   #welcome-section img {
     margin: 0 auto;
     display: grid;
@@ -593,35 +584,30 @@
     flex: 1;
     margin: 2rem 0 1.5rem;
   }
-
   #Contacto .copyright-container {
     display: flex;
     justify-content: space-between;
   }
-} */
+}
 
-/* @media (min-width: 1100px) {
+/* estilos para pantallas grandes */
+@media (min-width: 1100px) {
   :root {
     font-size: 17.5px;
   }
-
   #welcome-section {
     display: flex;
   }
-
   #welcome-section div {
     text-align: left;
     margin-left: 4rem;
   }
-
   #welcome-section div p {
     margin-left: 0;
   }
-
   #Empresa .container {
     padding: 3.5rem 0;
   }
-
   #new-diplomatura {
     height: 80vh;
     background-size: cover;
@@ -633,25 +619,20 @@
     justify-content: center;
     padding-left: 4rem;
   }
-
   #worldwide {
     padding: 3rem 0;
   }
-
   #worldwide img {
     order: 0;
     width: 43%;
   }
-
   #worldwide > div {
     margin: 0 4rem;
     width: 43%;
   }
-
   #worldwide > div > div {
     justify-content: space-between;
   }
-
   #worldwide > div > div > div > span {
     font-size: 2.5rem;
   }
@@ -659,4 +640,4 @@
     justify-content: space-around;
     gap: 2rem;
   }
-} */
+}
