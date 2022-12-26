@@ -66,7 +66,7 @@ footer {
 }
 /* las imágenes ocupan el 100% del ancho de la pantalla automáticamente */
 img {
-  max-width: 100%;
+  max-width: 50%;
 }
 /* estilo del botón */
 button {
@@ -130,7 +130,7 @@ header nav ul {
 #benefits-section div {
   width: 315px; /* para los celulares más chicos */
   text-align: center;
-  margin: 0 2 rem;
+  margin: 0 2rem;
 }
 /* estilo a los íconos de beneficios */
 #benefits-section div div {
@@ -427,7 +427,7 @@ h2 {
 }
 /* estilos al formulario de email */
 #subscription-section input {
-  padding: 0.75rem 1 rem;
+  padding: 0.75rem 1rem;
   width: 280px;
   border: none;
   margin-bottom: 2rem;
@@ -507,7 +507,7 @@ h2 {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  #cursos {
+  #Cursos {
     margin-bottom: 2rem;
   }
   #Cursos > div {
@@ -530,7 +530,7 @@ h2 {
     margin: 3rem 0;
   }
   .slides-items div > img {
-    width: 200px; /* aumentar el tamaño de las img */ 
+    width: 200px; /* aumentar el tamaño de las img */
     margin: 0 auto;
     display: grid;
   }
@@ -550,42 +550,48 @@ h2 {
     font-size: 17px;
   }
   header img {
-    grid-row: 1/3;
+    grid-row: 1/3; /* imagen en una fila */
+    grid-column: 1/6;
   }
+
   header button {
-    visibility: hidden;
+    visibility: hidden; /* ocultar el boton hamburger */
   }
   .hidden {
-    display: inline;
+    display: inline; /* estilo al ocultar el boton hamburger */
   }
   header nav {
-    grid-row: 1/3;
+    grid-row: 1/3; /* posicionar los elementos del nav */
     grid-column: 4/6;
     margin: auto 0;
   }
   header nav ul {
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: auto;
+    flex-direction: row; /* menu en una fila */
+    justify-content: space-evenly; /* espaciado proporcional */
+    height: auto; /* ajusta la altura según requira */
   }
   header nav ul li a:hover {
-    color: var(--primary);
+    color: var(--primary); /* hover al menu  */
   }
   #welcome-section img {
     margin: 0 auto;
     display: grid;
-    width: 50%;
+    width: 50%; /* ajustes a la imagen */
   }
-  #new-diplomatura > buttom i {
-    margin-left: 0.5rem;
+  #new-diplomatura > button i {
+    margin-left: 0.5rem; /* ajustes al ícono del botón */
+  }
+  #Contacto .footer-container {
+    justify-content: space-evenly; /* elementos del footer espaciado uno al lado del otro */
+    gap: 2rem;
   }
   #Contacto .footer-container > div {
     width: auto;
-    flex: 1;
+    flex: 1; /* elementos del footer uno al lado del otro con el mismo ancho */
     margin: 2rem 0 1.5rem;
   }
   #Contacto .copyright-container {
-    display: flex;
+    display: flex; /* elementos en la misma fila */
     justify-content: space-between;
   }
 }
@@ -596,10 +602,10 @@ h2 {
     font-size: 17.5px;
   }
   #welcome-section {
-    display: flex;
+    display: flex; /* elementos en la misma fila */
   }
   #welcome-section div {
-    text-align: left;
+    text-align: left; /* alineado del texto a la izquierda */
     margin-left: 4rem;
   }
   #welcome-section div p {
@@ -609,32 +615,32 @@ h2 {
     padding: 3.5rem 0;
   }
   #new-diplomatura {
-    height: 80vh;
+    height: 80vh; /* altura fija */
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* no repita la imagen si sobra espacio */
     background-position: center;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: center;
+    display: flex; /* habilitar las funciones flex */
+    flex-flow: column nowrap; /* encolumna los elementos */
+    align-items: flex-start; /* empiezan los elementos a la izquierda */
+    justify-content: center; /* centrado verticalmente */
     padding-left: 4rem;
   }
   #worldwide {
     padding: 3rem 0;
   }
   #worldwide img {
-    order: 0;
-    width: 43%;
+    order: 0; /* mantener el orden de los elementos en el html */
+    width: 43%; /* ajustar el ancho para que entren dos elementos */
   }
   #worldwide > div {
     margin: 0 4rem;
-    width: 43%;
+    width: 43%; /* ajustar el ancho para que entren dos elementos */
   }
   #worldwide > div > div {
-    justify-content: space-between;
+    justify-content: space-between; /* espaciado */
   }
   #worldwide > div > div > div > span {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* tamaño de los números */
   }
   #Contacto .footer-container {
     justify-content: space-around;
